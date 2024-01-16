@@ -1,9 +1,7 @@
-﻿using Newtonsoft.Json;
-using System;
+﻿using System;
 using System.ComponentModel;
 using System.Diagnostics;
 using System.IO.Ports;
-using System.Linq;
 using System.Windows.Forms;
 using TemperatureHumidityMonitorForm.Models;
 using TemperatureHumidityMonitorForm.Services;
@@ -28,7 +26,7 @@ namespace TemperatureHumidityMonitorForm
         /*
             GUI events
          */
-        private void Form1_Load(object sender, EventArgs e)
+        private void MainForm_Load(object sender, EventArgs e)
         {
             LoadSerialPorts();
             LoadBaudRates();
@@ -48,15 +46,15 @@ namespace TemperatureHumidityMonitorForm
             });
 
         }
-        private void serialPortsReload_Click(object sender, EventArgs e)
+        private void SerialPortsReload_Click(object sender, EventArgs e)
         {
             LoadSerialPorts();
         }
-        private void baudrateReload_Click(object sender, EventArgs e)
+        private void BaudrateReload_Click(object sender, EventArgs e)
         {
             LoadBaudRates();
         }
-        private void closePort_Click(object sender, EventArgs e)
+        private void ClosePort_Click(object sender, EventArgs e)
         {
             _serialPortService.CancelWorker();
         }

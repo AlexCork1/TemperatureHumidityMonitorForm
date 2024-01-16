@@ -105,7 +105,7 @@
             this.serialPortsReload.TabIndex = 3;
             this.serialPortsReload.Text = "R";
             this.serialPortsReload.UseVisualStyleBackColor = true;
-            this.serialPortsReload.Click += new System.EventHandler(this.serialPortsReload_Click);
+            this.serialPortsReload.Click += new System.EventHandler(this.SerialPortsReload_Click);
             // 
             // baudrateReload
             // 
@@ -115,7 +115,7 @@
             this.baudrateReload.TabIndex = 4;
             this.baudrateReload.Text = "R";
             this.baudrateReload.UseVisualStyleBackColor = true;
-            this.baudrateReload.Click += new System.EventHandler(this.baudrateReload_Click);
+            this.baudrateReload.Click += new System.EventHandler(this.BaudrateReload_Click);
             // 
             // OpenPortButton
             // 
@@ -135,7 +135,7 @@
             this.closePort.TabIndex = 6;
             this.closePort.Text = "Close port";
             this.closePort.UseVisualStyleBackColor = true;
-            this.closePort.Click += new System.EventHandler(this.closePort_Click);
+            this.closePort.Click += new System.EventHandler(this.ClosePort_Click);
             // 
             // MainForm
             // 
@@ -152,7 +152,7 @@
             this.Name = "MainForm";
             this.Text = "Show data";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.MainForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).EndInit();
             this.ResumeLayout(false);
 
